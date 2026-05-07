@@ -30,4 +30,4 @@ df = df.dropna(subset=["exports_gdp_value"])
 
 print(df.head())
 
-df.to_csv("exports_value_gdp.csv", index=False)
+df.to_csv("data/raw/exports_value_gdp.csv", index=False)

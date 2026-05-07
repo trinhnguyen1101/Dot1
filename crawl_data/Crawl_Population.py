@@ -41,6 +41,6 @@ df = df.dropna(subset=["population"])
 print(df.head())
 
 # Lưu CSV
-df.to_csv("worldbank_population.csv", index=False)
+df.to_csv("data/raw/worldbank_population.csv", index=False)
 
 print("Đã lưu file worldbank_population.csv")

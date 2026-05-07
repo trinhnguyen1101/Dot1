@@ -33,4 +33,4 @@ df = df[df["country_code"].str.len() == 3]
 
 print(df.head())
 
-df.to_csv("fdi_inflow.csv", index=False)
+df.to_csv("data/raw/fdi_inflow.csv", index=False)

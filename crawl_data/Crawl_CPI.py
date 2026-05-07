@@ -33,4 +33,4 @@ df = df[df["country_code"].str.len() == 3]
 
 print(df.head())
 
-df.to_csv("inflation_cpi.csv", index=False)
+df.to_csv("data/raw/inflation_cpi.csv", index=False)

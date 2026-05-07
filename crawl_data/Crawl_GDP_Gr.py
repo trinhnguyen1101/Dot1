@@ -41,6 +41,6 @@ df = df[df["country_code"].str.len() == 3]
 
 print(df.head())
 
-df.to_csv("worldbank_macro_data.csv", index=False)
+df.to_csv("data/raw/worldbank_macro_data.csv", index=False)
 
 print("Done!")
