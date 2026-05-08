@@ -1,0 +1,27 @@
+column,description
+__RULE__TIME_RANGE__,Kept years 1990-2024; removed years outside this range.
+__RULE__MISSINGNESS__,Dropped columns/years with missing_share > 0.50.
+__RULE__IMPUTE_MEAN__,"Filled missing values using per-country mean, then global mean if still missing."
+__DROPPED_ROWS__,597
+__DROPPED_YEARS_TIME_RANGE__,"1960, 1961, 1962, 1963, 1964, 1965, 1966, 1967, 1968, 1969, 1970, 1971, 1972, 1973, 1974, 1975, 1976, 1977, 1978, 1979, 1980, 1981, 1982, 1983, 1984, 1985, 1986, 1987, 1988, 1989, 2025"
+__IMPUTED_COLUMNS__,"Lending_Interest_Rate_Pct, Remittances_Pct_GDP, Unemployment_Pct, Inflation_CPI_Pct"
+
+Year
+FDI_Inflows_USD,"Foreign direct investment, net inflows (current USD)"
+Remittances_Pct_GDP,"Personal remittances, received (% of GDP)"
+Inflation_CPI_Pct,"Inflation, consumer prices (annual %)"
+Lending_Interest_Rate_Pct,Lending interest rate (%)
+Exports_USD,Exports of goods and services (current USD)
+Imports_USD,Imports of goods and services (current USD)
+GDP_Growth_Pct,GDP growth (annual %)
+Unemployment_Pct,"Unemployment, total (% of total labor force)"
+Population,"Population, total"
+GNI_USD,GNI (current USD)
+GDP_Current_USD,GDP (current USD)
+Labor_Force_Total,"Labor force, total"
+Trade_Balance_USD,Exports minus imports (current USD)
+GDP_Per_Capita_USD,GDP per capita (current USD)
+GDP_GNI_Gap_Pct,(GDP - GNI) / GDP * 100
+Economic_Openness_Pct,(Exports + Imports) / GDP * 100
+FDI_to_GDP_Pct,FDI inflows / GDP * 100
+Labor_Participation_Rate_Pct,Labor force / population * 100
