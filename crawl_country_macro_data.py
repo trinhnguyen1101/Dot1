@@ -22,16 +22,16 @@ column_names = {
 
 # 2. Danh sách tổng hợp (Code sẽ tự nhận diện nước nào đã có)
 country_code = [
-    'VNM', 'THA', 'MYS', 'IDN', 'PHL', 'SGP', 'CHN', 'IND', 'PAK', 'KOR',        # Đã cào
-    'MEX', 'BRA', 'IRL', 'DEU', 'ZAF', 'USA', 'JPN'                              # Cần cào thêm
-]
+    'VNM', 'THA', 'MYS', 'IDN', 'PHL', 'SGP', 'CHN', 'IND', 'PAK', 'KOR',
+    'MEX', 'BRA', 'IRL', 'DEU', 'ZAF', 'USA', 'JPN' 
+    ]
 
 for code in country_code:
     output_file = f'{code}_macro_data.csv'
     
     # KIỂM TRA FILE ĐÃ TỒN TẠI CHƯA
     if os.path.exists(output_file):
-        print(f"⏩ Bỏ qua {code}: File '{output_file}' đã tồn tại.")
+        print(f"Bỏ qua {code}: File '{output_file}' đã tồn tại.")
         continue # Chuyển sang quốc gia tiếp theo
         
     print(f"\n=========================================")
@@ -64,7 +64,7 @@ for code in country_code:
             print(f"Lỗi khi tải {ind_id}: {e}")
 
     if master_df.empty:
-        print(f"⚠️ Không lấy được dữ liệu cho mã {code}.")
+        print(f"Không lấy được dữ liệu cho mã {code}.")
         continue
 
     # 3. Tiền xử lý & Tính toán
@@ -96,4 +96,4 @@ for code in country_code:
 
     # 4. Xuất file
     master_df.to_csv(output_file, index=False)
-    print(f"✅ Hoàn tất! Đã lưu file: {output_file}")
+    print(f"Hoàn tất! Đã lưu file: {output_file}")
