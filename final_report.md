@@ -55,10 +55,16 @@ Kết quả mô hình hồi quy tuyến tính (OLS) cơ bản phân tích tác �
 - Kiểm định *Tăng trưởng -> Độ mở*: Được chấp thuận với độ tin cậy cao (P-value ở Lag 2 = 0.0341).
 **Hàm ý:** Các nhà máy FDI xây dựng tại Việt Nam giúp nền kinh tế tăng trưởng nội tại trước, sau đó mới tạo ra năng lực xuất khẩu khổng lồ và kéo độ mở kinh tế tăng theo sau độ trễ 2 năm. FDI là nguyên nhân gốc rễ, Độ mở kinh tế chỉ là kết quả phái sinh.
 
+Để có cái nhìn trực quan hơn về sự bùng nổ của xuất nhập khẩu, dưới đây là biểu đồ thể hiện sự gia tăng liên tục của Độ mở kinh tế đi kèm với sự thặng dư (chuyển từ nhập siêu sang xuất siêu) của Cán cân thương mại trong giai đoạn nghiên cứu:
+
+![Độ mở kinh tế và Cán cân thương mại](fig/openness_vs_trade_balance.png)
+
+
 ### 3.2. Vị thế Việt Nam trong khối ASEAN (Panel Data)
-So sánh dữ liệu của Việt Nam với Thái Lan, Indonesia, Malaysia, Philippines:
-- **Thống kê mô tả:** Tỷ lệ FDI/GDP trung bình của Việt Nam đạt **5.38%**, dẫn đầu khu vực (Malaysia: 3.95%, Thái Lan: 2.56%, Philippines: 1.71%, Indonesia: 1.31%).
-- **Kiểm định sự khác biệt:** Kiểm định ANOVA ($F-statistic = 40.0334$, $P-value = 0.0000$) và T-Test ($T-statistic = 7.6763$, $P-value = 0.0000$) xác nhận năng lực thu hút FDI của Việt Nam hoàn toàn vượt trội so với phần còn lại của khu vực một cách tuyệt đối về mặt thống kê.
+So sánh dữ liệu của Việt Nam với các nền kinh tế có điểm tương đồng về cơ cấu phát triển trong khu vực (Thái Lan, Indonesia, Malaysia, Philippines). *Lưu ý: Singapore (SGP) được loại trừ khỏi nhóm so sánh này do bản chất cấu trúc kinh tế khác biệt (là trung tâm tài chính toàn cầu với mô hình siêu mở, tỷ lệ FDI/GDP trung bình lên tới 18.45%, nếu đưa vào sẽ làm méo lệch việc đánh giá các nền kinh tế sản xuất gia công).*
+
+- **Thống kê mô tả:** Tỷ lệ FDI/GDP trung bình của Việt Nam đạt **5.38%**, dẫn đầu nhóm các nước đang phát triển trong khu vực (Malaysia: 3.95%, Thái Lan: 2.56%, Philippines: 1.71%, Indonesia: 1.31%).
+- **Kiểm định sự khác biệt:** Kiểm định ANOVA ($F-statistic = 40.0334$, $P-value = 0.0000$) và T-Test ($T-statistic = 7.6763$, $P-value = 0.0000$) xác nhận năng lực thu hút FDI của Việt Nam hoàn toàn vượt trội so với phần còn lại của nhóm một cách tuyệt đối về mặt thống kê.
 - **Mô hình Fixed Effects ASEAN:** Kết quả hồi quy dữ liệu mảng khẳng định FDI là biến duy nhất giải thích sự tăng trưởng chung của toàn khối ($Coef = 0.6157, P-value = 0.000$), trong khi độ mở thương mại chung không có ý nghĩa ($P-value = 0.327$).
 
 ### 3.3. Rủi ro phi tuyến tính (Random Forest)
